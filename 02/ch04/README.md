@@ -17,7 +17,10 @@
     3-2 종료 명령
         -  aws ec2 terminate-instances --instance-ids i-01e4c73fe9f8ac533 --query "TerminatingInstances[0].InstanceId" --output text
         - aws ec2 delete-security-group --group-id sg-0904e645ec9509d8c
-
+    3-3 powerShell 권한 정확히 못들음 나중에 다시듣자 3시쯤
+        - Get-ExecutionPolicy
+        - Restricted
+        - PS C:\WINDOWS\system32> Set-ExecutionPolicy RemoteSigned
 
 ### 03. AWS SDK 프로그래밍
 
