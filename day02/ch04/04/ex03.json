@@ -13,7 +13,7 @@
 			"AllowedValues": ["t2.micro", "t2.small", "t2.medium"]
 		},
 		"VPC": {
-			"Description": "VPC Id",
+			"Description": "vpc-00ce686b",
 			"Type": "AWS::EC2::VPC::Id"
 		}
 	},
