@@ -52,10 +52,11 @@
 								"httpd": []
 					  		}
 						},
-						"source":{
-							"/var/www/html": "https://raw.githubusercontent.com/HeoYou/aws-practices/main/day03/ch04/04/mysite.tar.gz"
+						"files":{
+							"source":{
+								"/var/www/html": "https://raw.githubusercontent.com/HeoYou/aws-practices/main/day03/ch04/04/mysite.tar.gz"
+							}
 						},
-
 						"services": {
 							"sysvinit": {
 								"httpd": {
