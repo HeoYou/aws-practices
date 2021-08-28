@@ -110,11 +110,10 @@
 						"Fn::Join": [ "", [
 							"#!/bin/bash -ex\n",
 
-
-
 							"# cfn-init update\n",
 							"yum install -y aws-cfn-bootstrap\n",
-
+							"# software update\n",
+							"yum -y update",
 							"curl --silent --location https://rpm.nodesource.com/setup_14.x | bash - \n",
 							"/opt/aws/bin/cfn-init -v ",
 							" --stack ", {"Ref": "AWS::StackName"},

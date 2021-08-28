@@ -6,6 +6,6 @@ PUBLICNAMES=$(aws ec2 describe-instances \
 --output text)
 
 for PUBLICNAME in $PUBLICNAMES; do
-	ssh -t -i ~/mykey2.pem ec2-user@$PUBLICNAME \
+	ssh -t -i ~/aws-study.pem ec2-user@$PUBLICNAME \
 	"sudo yum -y --security update"
 done
