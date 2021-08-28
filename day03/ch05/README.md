@@ -14,3 +14,9 @@ $ aws cloudformation describe-stacks --stack-name myserver --query Stacks[0].Out
 
 $ aws cloudformation delete-stack --stack-name myserver
 ```
+
+
+### ch05ex05
+
+$ aws cloudformation create-stack --stack-name myserver --template-body https://raw.githubusercontent.com/HeoYou/aws-practices/main/day03/ch05/03/ex05.json --parameters ParameterKey=KeyName,ParameterValue=aws-study ParameterKey=VPC,ParameterValue=vpc-00ce686b ParameterKey=InstanceType,ParameterValue=t2.micro --capabilities CAPABILITY_NAMED_IAM
+
