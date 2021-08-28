@@ -52,7 +52,12 @@
 								"httpd": []
 					  		}
 						},
-
+						"files": {
+							"/var/www/html/index.html": "https://raw.githubusercontent.com/HeoYou/aws-practices/main/day03/ch04/04/index.html",
+							"mode": "00644",
+							"owner": "apache",
+							"group": "apache"
+						},
 						"services": {
 							"sysvinit": {
 								"httpd": {
