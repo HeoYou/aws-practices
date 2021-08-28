@@ -52,6 +52,9 @@
 								"nodejs" : []
 					  		}
 						},
+						"sources" : {
+							"/usr/local/myapp": "https://github.com/HeoYou/myapp-navigation/tarball/main"
+						},
 
 						"files": {
 							"/usr/lib/systemd/system/node-server.service": {
@@ -77,6 +80,12 @@
 								"mode": "000644",
 								"owner": "root",
 								"group": "root"
+							}
+						},
+						"commands":	{
+							"01_install_dependency":{
+								"command":"",
+								"cwd": "/usr/local/myapp"
 							}
 						},
 
