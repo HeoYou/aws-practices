@@ -52,7 +52,10 @@
 								"nodejs" : []
 					  		}
 						},
+						"sources": {
+							"/usr/local/myapp":"https://github.com/HeoYou/myapp-basic/tarball/main"
 
+						},
 						"files": {
 							"/usr/lib/systemd/system/node-server.service": {
 								"content": {
