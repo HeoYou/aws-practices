@@ -35,3 +35,6 @@ $ aws cloudformation describe-stacks --stack-name myserver --query Stacks[0].Out
 
 $ aws cloudformation delete-stack --stack-name myserver
 ```
+
+### ex07
+- https://github.com/HeoYou/mysite01/tarball/main
